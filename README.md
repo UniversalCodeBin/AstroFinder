@@ -1,73 +1,73 @@
-# AstroFinder
+# Welcome to your Lovable project
 
-🌌 A World Away: Hunting for Exoplanets
+## Project info
 
-🚀 Overview
+**URL**: https://lovable.dev/projects/ee263968-92c0-4ce9-9fea-e69604d014f8
 
-This project focuses on automating the identification and classification of exoplanets using data from Kepler, K2, and TESS missions. It analyzes planetary and stellar parameters to determine whether an observed object is a Confirmed Exoplanet, Candidate, or False Positive.
+## How can I edit this code?
 
-🧠 Objective
+There are several ways of editing your application.
 
-To create a reliable system that:
+**Use Lovable**
 
-Learns from NASA’s open exoplanet datasets.
+Simply visit the [Lovable Project](https://lovable.dev/projects/ee263968-92c0-4ce9-9fea-e69604d014f8) and start prompting.
 
-Classifies new observations into scientific categories.
+Changes made via Lovable will be committed automatically to this repo.
 
-Explains how each physical parameter affects the final classification.
+**Use your preferred IDE**
 
-Provides a simple, interactive interface for exploration.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-🪐 Key Features
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Data-Driven Classification: Uses real mission data for identifying exoplanetary status.
+Follow these steps:
 
-Parameter Interpretation: Shows how orbital period, radius, mass, and other factors influence results.
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Interactive Interface: Input values, upload datasets, and view classification results instantly.
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-Transparency: Displays detailed reasoning behind each classification.
+# Step 3: Install the necessary dependencies.
+npm i
 
-🧩 Data Sources
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-Kepler KOI Table
+**Edit a file directly in GitHub**
 
-Kepler False Positives Table
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-TESS Candidates Table
+**Use GitHub Codespaces**
 
-K2 Planets and Candidates Table
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Planetary Systems Table
-(All publicly available via NASA’s Exoplanet Archive)
+## What technologies are used for this project?
 
-⚙️ Tech Stack
+This project is built with:
 
-Component	Technology Used
-Programming Language	Python
-Data Processing	Pandas, NumPy
-Modeling & Analysis	Scikit-learn
-Visualization	Plotly, Matplotlib
-Interface	Streamlit / Gradio
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-🧪 Workflow
+## How can I deploy this project?
 
-Input planetary data such as orbital period, radius, and temperature.
+Simply open [Lovable](https://lovable.dev/projects/ee263968-92c0-4ce9-9fea-e69604d014f8) and click on Share -> Publish.
 
-The system compares it with trained mission data.
+## Can I connect a custom domain to my Lovable project?
 
-Classification is displayed as Confirmed, Candidate, or False Positive.
+Yes, you can!
 
-Each output includes a breakdown of how key parameters influenced the decision.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-🌍 Impact
-
-This project streamlines the process of identifying potential exoplanets, helping researchers and students explore planetary data efficiently while maintaining scientific accuracy and clarity.
-
-🏁 Future Work
-
-Extend analysis to include light-curve data.
-
-Add live visual dashboards for continuous exploration.
-
-Enable dataset updates from new missions.
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
