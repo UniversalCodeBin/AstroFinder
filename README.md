@@ -1,81 +1,71 @@
-# Machine Learning Pipeline Project
+🌌 A World Away: Hunting for Exoplanets
 
-This project implements a machine learning pipeline that includes data processing, model training, prediction, and explainability features. The pipeline is designed to be modular and easy to extend.
+🚀 Overview
 
-## Project Structure
+This project focuses on automating the identification and classification of exoplanets using data from Kepler, K2, and TESS missions. It analyzes planetary and stellar parameters to determine whether an observed object is a Confirmed Exoplanet, Candidate, or False Positive.
 
-- **data/**: Contains datasets and related documentation.
-  - **README.md**: Documentation related to the data used in the project, including sources, formats, and preprocessing steps.
+🧠 Objective
 
-- **src/**: Contains the source code for the project.
-  - **data_processing/**: Contains scripts for data preprocessing.
-    - **preprocess.py**: Functions for cleaning, transforming, and preparing data for model training.
-  
-  - **model_training/**: Contains scripts for training the machine learning model.
-    - **train.py**: Responsible for loading data, defining model architecture, training the model, and saving it for future predictions.
-  
-  - **prediction_engine/**: Contains the prediction engine for making classifications.
-    - **predict.py**: Functions to load the trained model, preprocess input data, and return predictions.
-  
-  - **explainability/**: Contains scripts for model explainability.
-    - **feature_importance.py**: Calculates and returns the importance of each feature used in the model.
-    - **shap_values.py**: Computes SHAP values to provide insights into feature contributions to predictions.
-  
-  - **utils/**: Contains utility functions used across the project.
-    - **helpers.py**: Functions for data loading, saving models, and other helper functionalities.
+To create a reliable system that:
 
-- **requirements.txt**: Lists the dependencies required for the project, including libraries for machine learning, data processing, and explainability.
+Learns from NASA’s open exoplanet datasets.
 
-- **README.md**: Overall documentation for the project, including setup instructions, usage examples, and descriptions of the main components.
+Classifies new observations into scientific categories.
 
-- **config.yaml**: Configuration settings for the project, such as paths to data, model parameters, and other adjustable settings.
+Explains how each physical parameter affects the final classification.
 
-## Setup Instructions
+Provides a simple, interactive interface for exploration.
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
+🪐 Key Features
 
-2. Navigate to the project directory:
-   ```
-   cd ml-pipeline-project
-   ```
+Data-Driven Classification: Uses real mission data for identifying exoplanetary status.
 
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+Parameter Interpretation: Shows how orbital period, radius, mass, and other factors influence results.
 
-4. Configure the `config.yaml` file as needed.
+Interactive Interface: Input values, upload datasets, and view classification results instantly.
 
-## Usage
+Transparency: Displays detailed reasoning behind each classification.
 
-- To preprocess data, run:
-  ```
-  python src/data_processing/preprocess.py
-  ```
+🧩 Data Sources
 
-- To train the model, run:
-  ```
-  python src/model_training/train.py
-  ```
+Kepler KOI Table
 
-- To make predictions, run:
-  ```
-  python src/prediction_engine/predict.py
-  ```
+Kepler False Positives Table
 
-- To calculate feature importance, run:
-  ```
-  python src/explainability/feature_importance.py
-  ```
+TESS Candidates Table
 
-- To compute SHAP values, run:
-  ```
-  python src/explainability/shap_values.py
-  ```
+K2 Planets and Candidates Table
 
-## Contributing
+Planetary Systems Table
+(All publicly available via NASA’s Exoplanet Archive)
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+⚙️ Tech Stack
+
+Component	Technology Used
+Programming Language	Python
+Data Processing	Pandas, NumPy
+Modeling & Analysis	Scikit-learn
+Visualization	Plotly, Matplotlib
+Interface	Streamlit / Gradio
+
+🧪 Workflow
+
+Input planetary data such as orbital period, radius, and temperature.
+
+The system compares it with trained mission data.
+
+Classification is displayed as Confirmed, Candidate, or False Positive.
+
+Each output includes a breakdown of how key parameters influenced the decision.
+
+🌍 Impact
+
+This project streamlines the process of identifying potential exoplanets, helping researchers and students explore planetary data efficiently while maintaining scientific accuracy and clarity.
+
+🏁 Future Work
+
+Extend analysis to include light-curve data.
+
+Add live visual dashboards for continuous exploration.
+
+Enable dataset updates from new missions.
