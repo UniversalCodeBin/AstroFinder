@@ -1,0 +1,15 @@
+data_path: "data/"
+model_save_path: "models/trained_model.pkl"
+prediction_input_path: "data/prediction_input.csv"
+prediction_output_path: "data/prediction_output.csv"
+feature_importance_output_path: "data/feature_importance.json"
+shap_values_output_path: "data/shap_values.png"
+model_parameters:
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 100
+  validation_split: 0.2
+explainability:
+  enable_feature_importance: true
+  enable_shap_values: true
+  shap_explainer_type: "TreeExplainer"
